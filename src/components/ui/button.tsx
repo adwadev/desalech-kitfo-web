@@ -18,6 +18,11 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Ethiopian-themed variants
+        spiced: "bg-spiced-red text-white hover:bg-spiced-red/90 shadow-warm",
+        golden: "bg-golden-accent text-coffee-brown hover:bg-golden-accent/90 font-semibold",
+        hero: "bg-spiced-red/90 text-white border-2 border-spiced-red hover:bg-spiced-red hover:shadow-elegant backdrop-blur-sm",
+        "outline-hero": "border-2 border-white text-white hover:bg-white/10 backdrop-blur-sm",
       },
       size: {
         default: "h-10 px-4 py-2",
