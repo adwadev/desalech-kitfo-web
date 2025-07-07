@@ -52,7 +52,7 @@ const menuItems = [
 
 const MenuSection = () => {
   return (
-    <section className="py-20 bg-background">
+    <section id="menu" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-coffee-brown mb-4">

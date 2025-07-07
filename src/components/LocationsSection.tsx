@@ -7,6 +7,8 @@ const locations = [
     subtitle: "Main Branch",
     address: "Airport Road, front of Millennium Hall",
     phone: "+251 91 123 1859",
+    mapLink: "https://maps.app.goo.gl/L7j9jKMWKmuz99eLA",
+    city: "Addis Ababa",
     featured: true
   },
   {
@@ -14,6 +16,8 @@ const locations = [
     subtitle: "Traditional Setting",
     address: "Lebu Area, Nifas Silk District",
     phone: "+251 91 123 1860",
+    mapLink: "https://maps.app.goo.gl/4hZZsq2814LKF4J1A",
+    city: "Addis Ababa",
     featured: false
   },
   {
@@ -21,6 +25,8 @@ const locations = [
     subtitle: "City Center",
     address: "Riche Area, Kirkos District",
     phone: "+251 91 123 1861",
+    mapLink: "https://maps.app.goo.gl/BfKPibDWAruXvLNL81",
+    city: "Addis Ababa",
     featured: false
   },
   {
@@ -28,6 +34,35 @@ const locations = [
     subtitle: "Cultural Experience",
     address: "Cultural Hall Complex, Addis Ababa",
     phone: "+251 91 123 1862",
+    mapLink: "https://maps.app.goo.gl/f6pmgNsbnbwFnK2R6",
+    city: "Addis Ababa",
+    featured: false
+  },
+  {
+    name: "Dire Dawa - Central Branch",
+    subtitle: "Eastern Gateway",
+    address: "Kazanchis Area, Dire Dawa",
+    phone: "+251 91 123 1863",
+    mapLink: "https://maps.app.goo.gl/V2Xq3EeNnxJHQrrAA",
+    city: "Dire Dawa",
+    featured: false
+  },
+  {
+    name: "Dire Dawa - Sabian Branch",
+    subtitle: "Historic District",
+    address: "Sabian Area, Dire Dawa",
+    phone: "+251 91 123 1864",
+    mapLink: "https://maps.app.goo.gl/dS4fESycuhYC7Lci7",
+    city: "Dire Dawa",
+    featured: false
+  },
+  {
+    name: "Harar - Jugol Branch",
+    subtitle: "Ancient City",
+    address: "Inside Jugol, Old City, Harar",
+    phone: "+251 91 123 1865",
+    mapLink: "https://maps.app.goo.gl/vozAvwkbHXf1m9eq8",
+    city: "Harar",
     featured: false
   }
 ];
@@ -38,14 +73,14 @@ const LocationsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-coffee-brown mb-4">
-            Find Us Across Addis Ababa
+            Find Us Across Ethiopia
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Visit any of our authentic locations to experience the true taste of Ethiopian cuisine
+            Visit any of our authentic locations in Addis Ababa, Dire Dawa, and Harar to experience the true taste of Ethiopian cuisine
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {locations.map((location, index) => (
             <Card 
               key={index} 
@@ -59,6 +94,12 @@ const LocationsSection = () => {
                     Main Branch
                   </div>
                 )}
+                
+                <div className="mb-2">
+                  <span className="text-xs font-medium text-spiced-red bg-spiced-red/10 px-2 py-1 rounded">
+                    {location.city}
+                  </span>
+                </div>
                 
                 <h3 className="text-xl font-bold text-coffee-brown mb-2">
                   {location.name}
@@ -79,6 +120,10 @@ const LocationsSection = () => {
                     <a 
                       href={`tel:${location.phone}`}
                       className="text-sm font-medium text-foreground hover:text-spiced-red transition-colors"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        window.open(`tel:${location.phone}`);
+                      }}
                     >
                       {location.phone}
                     </a>
@@ -86,9 +131,14 @@ const LocationsSection = () => {
                 </div>
                 
                 <div className="mt-6 pt-4 border-t border-border">
-                  <button className="text-spiced-red font-medium text-sm hover:underline">
+                  <a 
+                    href={location.mapLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-spiced-red font-medium text-sm hover:underline"
+                  >
                     Get Directions →
-                  </button>
+                  </a>
                 </div>
               </CardContent>
             </Card>

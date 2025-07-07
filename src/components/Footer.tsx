@@ -7,7 +7,10 @@ const Footer = () => {
     { name: "Bole - Millennium Hall", phone: "+251 91 123 1859" },
     { name: "Nifas Silk - Lebu", phone: "+251 91 123 1860" },
     { name: "Kirkos - Riche Area", phone: "+251 91 123 1861" },
-    { name: "Cultural Hall", phone: "+251 91 123 1862" }
+    { name: "Cultural Hall", phone: "+251 91 123 1862" },
+    { name: "Dire Dawa - Central", phone: "+251 91 123 1863" },
+    { name: "Dire Dawa - Sabian", phone: "+251 91 123 1864" },
+    { name: "Harar - Jugol", phone: "+251 91 123 1865" }
   ];
 
   return (
@@ -17,13 +20,13 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-golden-accent">
-              Desalech Kitfo
+              Desalegn Kitfo
             </h3>
             <p className="text-injera-cream leading-relaxed">
               "Tradition Served Raw, Spiced with Soul."
             </p>
             <p className="text-sm text-injera-cream/80">
-              Authentic Ethiopian and Gurage cuisine served across multiple locations in Addis Ababa since generations.
+              Authentic Ethiopian and Gurage cuisine served across multiple locations in Ethiopia since generations.
             </p>
             
             <div className="flex items-center gap-4 pt-4">
@@ -67,6 +70,10 @@ const Footer = () => {
                   <a 
                     href={`tel:${location.phone}`}
                     className="text-injera-cream/80 hover:text-golden-accent transition-colors flex items-center gap-1"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(`tel:${location.phone}`, '_self');
+                    }}
                   >
                     <Phone className="h-3 w-3" />
                     {location.phone}
@@ -80,7 +87,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-injera-cream/80">
-            © {currentYear} Desalech Kitfo. All rights reserved.
+            © {currentYear} Desalegn Kitfo. All rights reserved.
           </p>
           
           <div className="flex gap-6 text-sm text-injera-cream/80 mt-4 md:mt-0">

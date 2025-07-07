@@ -7,7 +7,7 @@ const ContactSection = () => {
   const mainPhone = "+251 91 123 1859";
   
   const handleReserveCall = () => {
-    window.location.href = `tel:${mainPhone}`;
+    window.open(`tel:${mainPhone}`, '_self');
   };
 
   return (
@@ -44,6 +44,10 @@ const ContactSection = () => {
                       <a 
                         href={`tel:${mainPhone}`}
                         className="text-injera-cream hover:text-golden-accent transition-colors text-lg"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.open(`tel:${mainPhone}`, '_self');
+                        }}
                       >
                         {mainPhone}
                       </a>
@@ -83,7 +87,7 @@ const ContactSection = () => {
                     className="flex items-center gap-2 text-injera-cream hover:text-golden-accent transition-colors"
                   >
                     <Instagram className="h-5 w-5" />
-                    <span>@desalechkitfo</span>
+                    <span>@desalegnkitfo</span>
                   </a>
                 </div>
               </CardContent>
