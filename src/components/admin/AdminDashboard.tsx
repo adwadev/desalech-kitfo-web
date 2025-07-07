@@ -24,6 +24,7 @@ import {
 import { toast } from 'sonner';
 import { format } from 'date-fns';
 import AccountSettings from './AccountSettings';
+import { API_ENDPOINTS } from '@/lib/api';
 
 interface Feedback {
   id: number;
@@ -71,7 +72,7 @@ const AdminDashboard = ({ admin, token, onLogout }: AdminDashboardProps) => {
     try {
       setIsLoading(true);
       const response = await fetch(
-        `http://localhost:3001/api/admin/feedback?status=${status}&limit=50`,
+        `${API_ENDPOINTS.adminFeedback}?status=${status}&limit=50`,
         {
           headers: {
             'Authorization': `Bearer ${token}`,
@@ -95,7 +96,7 @@ const AdminDashboard = ({ admin, token, onLogout }: AdminDashboardProps) => {
 
   const fetchStats = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/admin/stats', {
+      const response = await fetch(API_ENDPOINTS.adminStats, {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
@@ -122,7 +123,7 @@ const AdminDashboard = ({ admin, token, onLogout }: AdminDashboardProps) => {
     try {
       setIsUpdating(id);
       const response = await fetch(
-        `http://localhost:3001/api/admin/feedback/${id}/status`,
+        API_ENDPOINTS.updateFeedbackStatus(id),
         {
           method: 'PUT',
           headers: {
@@ -160,7 +161,7 @@ const AdminDashboard = ({ admin, token, onLogout }: AdminDashboardProps) => {
     try {
       setIsUpdating(id);
       const response = await fetch(
-        `http://localhost:3001/api/admin/feedback/${id}`,
+        API_ENDPOINTS.deleteFeedback(id),
         {
           method: 'DELETE',
           headers: {

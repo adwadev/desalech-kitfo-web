@@ -8,6 +8,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Input } from '@/components/ui/input';
 import { Shield, Eye, EyeOff, LogIn } from 'lucide-react';
 import { toast } from 'sonner';
+import { API_ENDPOINTS } from '@/lib/api';
 
 const loginSchema = z.object({
   username: z.string().min(1, 'Username is required'),
@@ -36,7 +37,7 @@ const AdminLogin = ({ onLoginSuccess }: AdminLoginProps) => {
     setIsLoading(true);
     
     try {
-      const response = await fetch('http://localhost:3001/api/auth/login', {
+      const response = await fetch(API_ENDPOINTS.login, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

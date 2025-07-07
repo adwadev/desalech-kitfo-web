@@ -7,7 +7,12 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const DB_PATH = path.join(__dirname, '../data/restaurant.db');
+// Use Railway's persistent storage path in production, local path in development
+const DB_PATH = process.env.DATABASE_PATH || (
+  process.env.NODE_ENV === 'production'
+    ? '/app/data/restaurant.db'
+    : path.join(__dirname, '../data/restaurant.db')
+);
 
 // Ensure data directory exists
 const dataDir = path.dirname(DB_PATH);

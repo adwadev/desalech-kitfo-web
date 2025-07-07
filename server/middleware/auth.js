@@ -1,7 +1,11 @@
 import jwt from 'jsonwebtoken';
 import { getDatabase } from '../database/init.js';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'desalegn_kitfo_secret_2024';
+const JWT_SECRET = process.env.JWT_SECRET || (
+  process.env.NODE_ENV === 'production' 
+    ? (() => { throw new Error('JWT_SECRET environment variable is required in production') })()
+    : 'desalegn_kitfo_secret_2024'
+);
 
 // Generate JWT token
 const generateToken = (adminId, username) => {

@@ -10,6 +10,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Star, Send, MessageCircle } from 'lucide-react';
 import { toast } from 'sonner';
+import { API_ENDPOINTS } from '@/lib/api';
 
 const feedbackSchema = z.object({
   customer_name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -81,7 +82,7 @@ const FeedbackForm = () => {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch('http://localhost:3001/api/feedback', {
+      const response = await fetch(API_ENDPOINTS.submitFeedback, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

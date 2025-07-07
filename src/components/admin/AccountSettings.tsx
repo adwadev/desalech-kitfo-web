@@ -9,6 +9,7 @@ import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
 import { User, Key, Save, Eye, EyeOff } from 'lucide-react';
 import { toast } from 'sonner';
+import { API_ENDPOINTS } from '@/lib/api';
 
 const profileSchema = z.object({
   username: z.string().min(1, 'Username is required'),
@@ -87,7 +88,7 @@ const AccountSettings = ({ admin, token }: AccountSettingsProps) => {
         updateData.newPassword = data.newPassword;
       }
 
-      const response = await fetch('http://localhost:3001/api/admin/profile', {
+      const response = await fetch(API_ENDPOINTS.adminProfile, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

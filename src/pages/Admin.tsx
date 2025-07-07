@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import AdminLogin from '@/components/admin/AdminLogin';
 import AdminDashboard from '@/components/admin/AdminDashboard';
 import { toast } from 'sonner';
+import { API_ENDPOINTS } from '@/lib/api';
 
 interface AdminData {
   id: number;
@@ -23,7 +24,7 @@ const Admin = () => {
       if (storedToken) {
         try {
           // Verify token with backend
-          const response = await fetch('http://localhost:3001/api/auth/verify', {
+          const response = await fetch(API_ENDPOINTS.verify, {
             headers: {
               'Authorization': `Bearer ${storedToken}`,
             },

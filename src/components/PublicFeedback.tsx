@@ -3,6 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Star, User, Calendar, MapPin, Heart, ChevronLeft, ChevronRight } from 'lucide-react';
 import { format } from 'date-fns';
+import { API_ENDPOINTS } from '@/lib/api';
 
 interface Feedback {
   id: number;
@@ -52,7 +53,7 @@ const PublicFeedback = () => {
       else setIsLoadingMore(true);
 
       const response = await fetch(
-        `http://localhost:3001/api/feedback/public?limit=${pagination.limit}&offset=${offset}`
+        `${API_ENDPOINTS.publicFeedback}?limit=${pagination.limit}&offset=${offset}`
       );
       
       if (!response.ok) {
@@ -84,7 +85,7 @@ const PublicFeedback = () => {
 
   const fetchStats = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/feedback/stats');
+      const response = await fetch(API_ENDPOINTS.feedbackStats);
       
       if (!response.ok) {
         throw new Error('Failed to fetch stats');
