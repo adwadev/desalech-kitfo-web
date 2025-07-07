@@ -1,0 +1,53 @@
+{
+  "name": "Desalegn Kitfo - #1 Authentic Ethiopian Restaurant",
+  "short_name": "Desalegn Kitfo",
+  "description": "#1 Ethiopian Restaurant specializing in traditional kitfo, gored gored, and Gurage cuisine. Multiple locations across Ethiopia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#6F4E37",
+  "theme_color": "#D32F2F",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["food", "restaurant", "Ethiopian", "dining"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Menu",
+      "short_name": "Menu",
+      "description": "View our traditional Ethiopian menu",
+      "url": "/#menu",
+      "icons": [{ "src": "/favicon.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Call to Reserve",
+      "short_name": "Reserve",
+      "description": "Call to make a reservation",
+      "url": "tel:+251911231859",
+      "icons": [{ "src": "/favicon.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Locations",
+      "short_name": "Locations",
+      "description": "Find our restaurant locations",
+      "url": "/#locations",
+      "icons": [{ "src": "/favicon.svg", "sizes": "192x192" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_includes": false
+}

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://desalegnkitfo.com/</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desalegnkitfo.com/" />
+    <xhtml:link rel="alternate" hreflang="am" href="https://desalegnkitfo.com/am/" />
+    <image:image>
+      <image:loc>https://desalegnkitfo.com/kitfo-hero-image.jpg</image:loc>
+      <image:title>Desalegn Kitfo - Traditional Ethiopian Restaurant</image:title>
+      <image:caption>Authentic Ethiopian kitfo served with spiced butter and injera</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Menu Page -->
+  <url>
+    <loc>https://desalegnkitfo.com/menu</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desalegnkitfo.com/menu" />
+    <xhtml:link rel="alternate" hreflang="am" href="https://desalegnkitfo.com/am/menu" />
+  </url>
+
+  <!-- Locations Page -->
+  <url>
+    <loc>https://desalegnkitfo.com/locations</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desalegnkitfo.com/locations" />
+    <xhtml:link rel="alternate" hreflang="am" href="https://desalegnkitfo.com/am/locations" />
+  </url>
+
+  <!-- Cultural Experience Page -->
+  <url>
+    <loc>https://desalegnkitfo.com/cultural-experience</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desalegnkitfo.com/cultural-experience" />
+    <xhtml:link rel="alternate" hreflang="am" href="https://desalegnkitfo.com/am/cultural-experience" />
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://desalegnkitfo.com/contact</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desalegnkitfo.com/contact" />
+    <xhtml:link rel="alternate" hreflang="am" href="https://desalegnkitfo.com/am/contact" />
+  </url>
+
+  <!-- Reservations Page -->
+  <url>
+    <loc>https://desalegnkitfo.com/reservations</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desalegnkitfo.com/reservations" />
+    <xhtml:link rel="alternate" hreflang="am" href="https://desalegnkitfo.com/am/reservations" />
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://desalegnkitfo.com/about</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desalegnkitfo.com/about" />
+    <xhtml:link rel="alternate" hreflang="am" href="https://desalegnkitfo.com/am/about" />
+  </url>
+
+  <!-- Location-specific pages -->
+  <url>
+    <loc>https://desalegnkitfo.com/locations/addis-ababa</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://desalegnkitfo.com/locations/dire-dawa</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://desalegnkitfo.com/locations/harar</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Menu items pages -->
+  <url>
+    <loc>https://desalegnkitfo.com/menu/traditional-kitfo</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://desalegnkitfo.com/menu/gored-gored</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://desalegnkitfo.com/menu/gurage-specialties</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Amharic version (alternate language) -->
+  <url>
+    <loc>https://desalegnkitfo.com/am/</loc>
+    <lastmod>2024-12-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desalegnkitfo.com/" />
+    <xhtml:link rel="alternate" hreflang="am" href="https://desalegnkitfo.com/am/" />
+  </url>
+
+</urlset>
