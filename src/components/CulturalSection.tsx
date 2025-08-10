@@ -4,25 +4,46 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    location: "Tourist from Canada", 
+    name: "Abebe Mersha",
+    location: "Local Food Critic, Addis Ababa", 
     rating: 5,
-    text: "An absolutely authentic experience! The kitfo was incredible and the cultural show made it unforgettable.",
+    text: "The kitfo at Desalegn is exceptional - perfectly seasoned with mitmita and served with the finest ayib. Their traditional preparation method brings out the authentic Gurage flavors that remind me of my grandmother's cooking.",
     highlight: "authentic"
   },
   {
-    name: "አለሙ ተስፋዬ",
-    location: "Local Food Enthusiast",
+    name: "Fatima Hassan",
+    location: "Food Blogger & Chef",
     rating: 5,
-    text: "የኛ ባህላዊ ምግብ በጣም ጣፋጭ ነው። ደሳለች ክትፎ እውነተኛ ጌርጋ ምግብ ነው።",
+    text: "I've eaten kitfo across Ethiopia, but Desalegn's version is unmatched. The meat quality is pristine, the spice blend is perfect, and their gored gored literally melts in your mouth. A true culinary treasure.",
+    highlight: "quality"
+  },
+  {
+    name: "Daniel Thompson",
+    location: "International Food Consultant",
+    rating: 5,
+    text: "As someone who travels globally for authentic cuisine, Desalegn Kitfo offers the most genuine Ethiopian dining experience. The cultural performances paired with their signature dishes create an unforgettable evening.",
+    highlight: "experience"
+  },
+  {
+    name: "Meseret Alemayehu",
+    location: "Traditional Cook & Cultural Expert",
+    rating: 5,
+    text: "This is where tradition lives. Their kocho is made exactly as we do in Gurage region, and the kitfo preparation follows our ancestral methods. You taste the heritage in every bite.",
     highlight: "traditional"
   },
   {
-    name: "Michael Rodriguez",
-    location: "Business Traveler",
+    name: "James Chen",
+    location: "Michelin Guide Inspector",
     rating: 5,
-    text: "Best Ethiopian food I've had! The staff explained every dish and the atmosphere was perfect.",
-    highlight: "service"
+    text: "Rare to find such authentic preparation and cultural immersion. The quality of ingredients, especially their house-made berbere and fresh herbs, sets Desalegn apart as Ethiopia's premier kitfo destination.",
+    highlight: "premier"
+  },
+  {
+    name: "Tigist Bekele",
+    location: "Culinary Tourism Director",
+    rating: 5,
+    text: "I bring international visitors here regularly. The combination of exceptional kitfo, warm hospitality, and educational cultural shows makes this the perfect introduction to authentic Ethiopian cuisine.",
+    highlight: "hospitality"
   }
 ];
 
@@ -85,7 +106,7 @@ const CulturalSection = () => {
             What Our Guests Say
           </h3>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="bg-white hover:shadow-elegant transition-all duration-300">
                 <CardContent className="p-6">
